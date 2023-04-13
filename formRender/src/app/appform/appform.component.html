@@ -1,0 +1,9 @@
+<h1>Create a new record</h1>
+<form (submit)="submitForm()">
+  <label for="field1">Field 1:</label>
+  <input type="text" name="field1" [(ngModel)]="formData.field1">
+  <br>
+  <label for="field2">Field 2:</label>
+  <input type="number" name="field2" [(ngModel)]="formData.field2">
+  <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,63 @@
+{
+  "port": 3001,
+  "appPort": 8080,
+  "host": "localhost:3001",
+  "protocol": "http",
+  "allowedOrigins": ["*"],
+  "domain": "http://localhost:3001",
+  "basePath": "",
+  "mongo": "mongodb://127.0.0.1:27017/demo2",
+  "mongoConfig": "",
+  "mongoCA": "",
+  "mongoSecret": "--- change me now ---",
+  "reservedForms": [
+    "submission",
+    "exists",
+    "export",
+    "role",
+    "current",
+    "logout",
+    "import",
+    "form",
+    "access",
+    "token",
+    "recaptcha"
+  ],
+  "jwt": {
+    "secret": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY0MTAwMTVhYzg2YTQwNzAxYjMzNmFlMSJ9LCJmb3JtIjp7Il9pZCI6IjU1M2RiOTRlNzJmNzAyZTcxNGRkOTc3OSIsInByb2plY3QiOiI1NTNkYjkyZjcyZjcwMmU3MTRkZDk3NzgifSwib3JpZ2luIjoiaHR0cHM6Ly9hcGkuZm9ybS5pbzozMDAwIiwicHJvamVjdCI6eyJfaWQiOiI1NTNkYjkyZjcyZjcwMmU3MTRkZDk3NzgifSwiaWF0IjoxNjc5NDg5NzY5LCJleHAiOjE3MTU3Nzc3Njl9.wHX7gDZZ_vU9PHEtaD1SFMHosqIjNVGm6AbWHw3sOsY",
+    "expireTime": 240
+  },
+  "email": {
+    "type": "sendgrid",
+    "username": "sendgrid-user",
+    "password": "sendgrid-pass"
+  },
+  "settings": {
+    "office365": {
+      "tenant": "",
+      "clientId": "",
+      "email": "",
+      "cert": "",
+      "thumbprint": ""
+    },
+    "email": {
+      "gmail": {
+        "auth": {
+          "user": "",
+          "pass": ""
+        }
+      },
+      "sendgrid": {
+        "auth": {
+          "api_user": "",
+          "api_key": ""
+        }
+      },
+      "mandrill": {
+        "auth": {
+          "apiKey": ""
+        }
+      }
+    }
+  }
+}
